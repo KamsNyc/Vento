@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function ServiceSection() {
   return (
-    <section className="max-h-[1327px] md:max-h-[411px] w-full ">
+    <section id="services" className="max-h-[1327px] md:max-h-[411px] w-full ">
       {/* HEADING CONTAINER*/}
       <div className="flex items-center justify-between gap-8 pt-[52px]">
         {/* HEADING */}

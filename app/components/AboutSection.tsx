@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 function AboutSection() {
   return (
-    <section className="max-h-[961px] md:max-h-[528px] w-full ">
+    <section id="about" className="max-h-[961px] md:max-h-[528px] w-full ">
       {/* HEADING CONTAINER*/}
       <div className="flex items-center justify-between gap-8 pt-[52px]">
         {/* HEADING */}

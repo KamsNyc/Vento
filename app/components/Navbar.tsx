@@ -20,7 +20,7 @@ function Navbar() {
         <ul className='flex items-center gap-14 text-white'>
             <Link href={'#about'}>About Us</Link>
             <Link href={'#services'}>Services</Link>
-            <Link href={'#Contact'}><Button variant="outline" size={'sm'} className='text-[#1A63BB]'>Contact</Button></Link> 
+            <Link href={'#contact'}><Button variant="outline" size={'sm'} className='text-[#1A63BB]'>Contact</Button></Link> 
         </ul>
 
     </section>
