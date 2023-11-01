@@ -5,14 +5,14 @@ import SectionHeading from "./SectionHeading";
 import emailjs from "emailjs-com";
 
 function ContactSection() {
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "service_qa7md6x",
         "template_ibhkif4",
-        e.target,
+        e.currentTarget,
         "Mex_LOCDswjtTjfls"
       )
       .then(
@@ -24,7 +24,7 @@ function ContactSection() {
         }
       );
 
-    e.target.reset(); // Reset the form after sending the email
+    e.currentTarget.reset(); // Reset the form after sending the email
   };
   return (
     <section
