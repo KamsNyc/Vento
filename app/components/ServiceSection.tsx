@@ -18,7 +18,7 @@ function ServiceSection() {
       </div>
 
       {/* SPLIT SECTION */}
-      <div className=" px-4 lg:px-[138px] my-[41px] lg:py-0 lg:my-[64px] grid lg:grid-cols-4 gap-y-20 h-full">
+      <div className=" px-4 lg:px-[138px] my-[41px] lg:py-0 lg:my-[64px] grid md:grid-cols-4 gap-y-20 h-full">
         {/* COL 1 */}
         <div className="flex-[25%] flex items-center justify-center">
             <div className="text-center">
