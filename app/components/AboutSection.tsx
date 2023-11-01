@@ -19,7 +19,7 @@ function AboutSection() {
       {/* SPLIT SECTION */}
       <div className=" px-4 xl:px-[138px] block md:flex items-center justify-between my-[41px] lg:py-0 md:gap-[80px] lg:my-[64px]">
         {/* LEFT */}
-        <div className="block lg:flex text-left w-full lg:w-1/2 h-full text-[#4E4E4E] text-[20.38px] font-[300] leading-[24px] max-h-[392px]lg:max-h-[252px] mb-[38px] md:mb-0">
+        <div className="block lg:flex text-left w-full lg:w-1/2 h-full text-[#4E4E4E] text-[20.38px] font-[400] leading-[24px] max-h-[492px] lg:max-h-[252px] mb-[38px] md:mb-0">
         Welcome to VentoHVAC, where we recognize that renovation projects and custom homes demand HVAC design solutions tailored to their distinctive requirements. Our team of skilled designers and technicians specializes in creating HVAC designs specifically for renovations and custom homes, boasting comprehensive expertise in the latest technologies and trends. Our commitment lies in crafting systems that are not only efficient, cost-effective, and sustainable but also prioritizing optimal comfort and indoor air quality for your home.
         </div>
         {/* RIGHT */}
