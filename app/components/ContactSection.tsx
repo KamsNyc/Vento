@@ -29,7 +29,7 @@ function ContactSection() {
   return (
     <section
       id="contact"
-      className="md:py-10 max-h-[1467px] md:max-h-[897px] w-full h-full "
+      className="md:py-10 max-h-[1467px] md:max-h-[897px] w-full h-full mb-[4rem]"
     >
       {/* HEADING CONTAINER*/}
       <div className="flex items-center justify-between gap-8 pt-[52px]">
