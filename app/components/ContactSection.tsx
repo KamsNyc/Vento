@@ -46,7 +46,7 @@ function ContactSection() {
       {/* SPLIT SECTION */}
       <div className=" px-4 xl:px-[138px] block md:flex items-center justify-between mt-[56px] md:mt-0 lg:py-0 md:gap-[56px] lg:my-[54px]">
         {/* LEFT */}
-        <div className="block lg:flex text-left w-full lg:w-[30%] h-full text-[#4E4E4E] text-[20.38px] font-[200] leading-[28px] max-h-[392px] lg:max-h-[292px] max-w-[426px] lg:max-w-[326px] lg:pr-2 mb-[38px] md:mt-0 md:mb-0">
+        <div className="block lg:flex text-left w-full lg:w-[30%] h-full text-[#4E4E4E] text-[20.38px] font-[300] leading-[28px] max-h-[392px] lg:max-h-[292px] max-w-[426px] lg:max-w-[326px] lg:pr-2 mb-[38px] md:mt-0 md:mb-0">
           Whether you are renovating an existing home or building a custom home,
           our team is here to help.
           <br></br>
