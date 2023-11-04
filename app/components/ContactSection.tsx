@@ -6,14 +6,20 @@ import emailjs from "emailjs-com";
 function ContactSection() {
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = () => 
-  {
-    emailjs.sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
-      .then((result) => {
+  const sendEmail = () => {
+    const formElement = form.current?.current;
+  
+    if (formElement) {
+      emailjs.sendForm('service_qa7md6x', 'template_ibhkif4', formElement, 'Mex_LOCDswjtTjfls')
+        .then((result) => {
           console.log(result.text);
-      }, (error) => {
+        })
+        .catch((error) => {
           console.log(error.text);
-      });
+        });
+    } else {
+      console.error('Form element not found.');
+    }
   };
   return (
     <section
