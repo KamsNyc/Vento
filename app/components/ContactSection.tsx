@@ -6,7 +6,7 @@ import emailjs from "emailjs-com";
 function ContactSection() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     emailjs
       .sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
