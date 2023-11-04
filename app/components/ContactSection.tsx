@@ -4,9 +4,10 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 function ContactSection() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = () => {
+  const sendEmail = () => 
+  {
     emailjs.sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
       .then((result) => {
           console.log(result.text);
