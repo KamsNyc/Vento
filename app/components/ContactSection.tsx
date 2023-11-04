@@ -4,22 +4,17 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 function ContactSection() {
-  const form = useRef<HTMLFormElement>(null);
+  const form = useRef();
 
-  const sendEmail = () => {
-    const formElement = form.current?.current;
-  
-    if (formElement) {
-      emailjs.sendForm('service_qa7md6x', 'template_ibhkif4', formElement, 'Mex_LOCDswjtTjfls')
-        .then((result) => {
-          console.log(result.text);
-        })
-        .catch((error) => {
-          console.log(error.text);
-        });
-    } else {
-      console.error('Form element not found.');
-    }
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
+      .then((result) => {
+        alert('message sent successfully');
+      }, (error) => {
+        alert('message sent failed');
+      });
   };
   return (
     <section
