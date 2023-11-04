@@ -8,13 +8,18 @@ function ContactSection() {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    emailjs
-      .sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
-      .then((result) => {
-        alert('message sent successfully');
-      }, (error) => {
-        alert('message sent failed');
-      });
+    
+    if (form.current) {
+      emailjs
+        .sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
+        .then((result) => {
+          alert('message sent successfully');
+        }, (error) => {
+          alert('message sent failed');
+        });
+    } else {
+      alert('Form is undefined');
+    }
   };
   return (
     <section
