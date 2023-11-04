@@ -1,21 +1,4 @@
-"use client";
-
-import React, {useRef} from "react";
-import emailjs from "emailjs-com";
-
-function ContactSection() {
-  const form = useRef();
-
-  const sendEmail = () => {
-    emailjs.sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
-  return (
-    <section
+<section
       id="contact"
       className="md:py-10 max-h-[1467px] md:max-h-[897px] w-full h-full mb-[4rem]"
     >
@@ -45,8 +28,8 @@ function ContactSection() {
           <br></br>
           info@ventohvac.com
         </div>
-        {/* RIGHT CONTACT FORM */}
-        <form ref={form} onSubmit={sendEmail} id="contact-form" className="block lg:flex-col items-center justify-center w-full lg:w-[70%] h-full">
+        {/* RIGHT */}
+        <form id="contact-form" className="block lg:flex-col items-center justify-center w-full lg:w-[70%] h-full">
           <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 w-full  gap-y-7 md:gap-y-14  gap-x-4">
             {/* FIRST NAME */}
             <div className="col-span-1 ">
@@ -146,17 +129,10 @@ function ContactSection() {
 
           {/* SUBMIT BUTTON */}
 
-          <input 
+          <button 
           type="submit" 
-          value="Send"
           className="w-full h-[52px] text-[#fff] text-[17px] pl-3 bg-[#1A63BB] rounded-[10px] cursor-pointer "
-          />
+          >Submit</button>
         </form>
       </div>
     </section>
-  );
-}
-
-export default ContactSection;
-
-
