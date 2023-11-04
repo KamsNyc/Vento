@@ -4,11 +4,11 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 function ContactSection() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (form.current) {
       emailjs
         .sendForm('service_qa7md6x', 'template_ibhkif4', form.current, 'Mex_LOCDswjtTjfls')
